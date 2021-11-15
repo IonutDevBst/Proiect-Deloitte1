@@ -1,6 +1,8 @@
 import React, { useState }  from 'react'
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
 
 
 
@@ -33,11 +35,13 @@ const Navbar = () => {
            </ul>
             <ul className="nav-links navbar">
             <Link to="/account" className="account">
-                     <li className="novacolor"> Account</li> 
+                    <li className="novacolor account1"><AccountCircleOutlinedIcon /></li>
+                    <li className=" account1 novacolor"> Account</li> 
 
                </Link>
                <Link to="/basket" className="basket">
-                   <li className="novacolor">Basket</li>
+                   <li className=" novacolor account1"><ShoppingBasketOutlinedIcon /></li>
+                   <li className="novacolor account1">Basket</li>
                </Link>
 
             </ul>
