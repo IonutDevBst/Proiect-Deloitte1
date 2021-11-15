@@ -21,27 +21,31 @@ const Navbar = () => {
           <li className="novacolor">Gelato</li>
         </Link>
         <Link to="/gelatoforspecialneeds" className="gelatoforspecialneeds">
-          <li className="novacolor">Gelato for special needs </li>
+          <li className="novacolor displayC">Gelato for special needs </li>
         </Link>
         <Link to="/donuts" className="donuts">
           <li className="novacolor">Donuts</li>
         </Link>
         <Link to="/donutsforspecialneeds" className="donutsforspecialneeds">
-          <li className="novacolor">Donuts for special needs</li>
+          <li className="novacolor displayC">Donuts for special needs</li>
         </Link>
       </ul>
       <ul className="nav-links navbar">
         <Link to="/account" className="account">
-          <li className="novacolor account1">
+            <div className="novacolor">
+          <li className=" account1">
             <AccountCircleOutlinedIcon />
           </li>
-          <li className=" account1 novacolor"> Account</li>
+          <li className=" account1 "> Account</li>
+          </div>
         </Link>
-        <Link to="/basket" className="basket">
-          <li className=" novacolor account1">
+        <Link to="/basket" className="basket ">
+            <div className="novacolor">
+          <li className="  account1">
             <ShoppingBasketOutlinedIcon />
           </li>
-          <li className="novacolor account1">Basket</li>
+          <li className=" account1">Basket</li>
+          </div>
         </Link>
       </ul>
 

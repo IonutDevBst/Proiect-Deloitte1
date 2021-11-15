@@ -1,43 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
-.navbar 
-{
-
-    display: flex;
-    justify-content: space-between;
-    
-
-
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
 
-.novacolor:hover, .novacolor:visited{
-    color:blue;
+.novacolor:hover,
+.novacolor:visited {
+  color: blue;
 }
 
 .Logo {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
 }
 .home,
 .gelatoforspecialneeds,
@@ -45,25 +39,26 @@
 .donuts,
 .gelato,
 .basket,
-.account{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    padding: 10px 20px;
-     margin: 0 10px;
-     cursor: pointer;
+.account {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
 }
-.signup{
-    border: 1px solid yellow;
-    border-radius: 5px;
-} 
-.account1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.signup {
+  border: 1px solid yellow;
+  border-radius: 5px;
 }
-
+.account1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.displayC {
+  display: inline;
+}
 
 /*
 .mobile-menu-icon {
