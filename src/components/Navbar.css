@@ -9,10 +9,26 @@
     justify-content: space-around;
     align-items: center;
     height: 75px;
-    background-color: #00828c;
-    color:white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
 
 }
+
+.navbar 
+{
+
+    display: flex;
+    justify-content: space-between;
+    
+
+
+}
+
+.novacolor:hover, .novacolor:visited{
+    color:blue;
+}
+
 .Logo {
     font-size: 30px;
 }
@@ -31,7 +47,7 @@
 .basket,
 .account{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     padding: 10px 20px;
      margin: 0 10px;
