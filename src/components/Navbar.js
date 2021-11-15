@@ -21,13 +21,13 @@ const Navbar = () => {
           <li className="novacolor">Gelato</li>
         </Link>
         <Link to="/gelatoforspecialneeds" className="gelatoforspecialneeds">
-          <li className="novacolor">GELATO FOR SPECIAL NEEDS </li>
+          <li className="novacolor">Gelato for special needs </li>
         </Link>
         <Link to="/donuts" className="donuts">
-          <li className="novacolor">DONUTS</li>
+          <li className="novacolor">Donuts</li>
         </Link>
         <Link to="/donutsforspecialneeds" className="donutsforspecialneeds">
-          <li className="novacolor">DONUTS FOR SPECIAL NEEDS</li>
+          <li className="novacolor">Donuts for special needs</li>
         </Link>
       </ul>
       <ul className="nav-links navbar">
