@@ -11,18 +11,18 @@ const Navbar = () => {
       
         <nav className="navbar">
            <h3 className="logo">Logo</h3>
-           <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
+           <ul className="nav-links navbar">
                <Link to="/home" className="home">
                    <li>Home</li>
                </Link>
                <Link to="/about" className="about">
-                   <li>About</li>
+                   <li>Gelato</li>
                </Link>
                <Link to="/skills" className="skills">
-                   <li>Skills</li>
+                   <li>GELATO FOR SPECIAL NEEDS </li>
                </Link>
                <Link to="/contact" className="contact">
-                   <li>Contact</li>
+                   <li>DONUTS</li>
                </Link>
                <Link to="/signup" className="signup">
                    <li>Sign Up</li>
