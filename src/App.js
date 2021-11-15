@@ -1,10 +1,12 @@
 import React from "react";
 import {BrowserRouter as  Router, Route, Routes, Switch } from "react-router-dom"
 import Home from "./components/Home";
-import About from "./components/About"; 
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import Signup from "./components/Signup.js";
+import Gelato from "./components/Gelato"; 
+import GelatoForSpecialNeeds from "./components/GelatoForSpecialNeeds";
+import DonutsForSpecialNeeds from "./components/DonutsForSpecialNeeds"
+import Donuts from "./components/Donuts";
+import Account from "./components/Account.js";
+import Basket from "./components/Basket.js"
 import "./App.css";
 import Navbar from "./components/Navbar";
 
@@ -16,10 +18,12 @@ const App = () => {
 
       <Routes>
        <Route path="/home" element={<Home/>} exact />
-       <Route path="/about" element={<About/>} exact />
-       <Route path="/skills" element={<Skills/>} exact />
-       <Route path="/contact" element={<Contact/>} exact />
-       <Route path="/signup" component={Signup} exact />
+       <Route path="/gelato" element={<Gelato/>} exact />
+       <Route path="/gelatoforspecialneeds" element={<GelatoForSpecialNeeds/>} exact />
+       <Route path="/donuts" element={<Donuts/>} exact />
+       <Route path="/donutsforspecialneeds" element={<DonutsForSpecialNeeds/>} exact />
+       <Route path="/account" element={<Account/>} exact />
+       <Route path="/basket" element={<Basket/>} exact />
      </Routes>
 
        

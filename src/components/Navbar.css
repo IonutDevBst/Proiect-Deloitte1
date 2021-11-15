@@ -24,10 +24,12 @@
     width: 75%;
 }
 .home,
-.skills,
-.contact,
-.about,
-.signup{
+.gelatoforspecialneeds,
+.donutsforspecialneeds,
+.donuts,
+.gelato,
+.basket,
+.account{
     text-decoration: none;
     color: white;
     font-size: 20px;

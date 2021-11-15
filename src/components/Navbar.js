@@ -10,22 +10,27 @@ const Navbar = () => {
     return (
       
         <nav className="navbar">
-           <h3 className="logo">Logo</h3>
            <ul className="nav-links navbar">
                <Link to="/home" className="home">
-                   <li>Home</li>
+                   <li>Gelato &amp; Donuts</li>
                </Link>
-               <Link to="/about" className="about">
+               <Link to="/gelato" className="gelato">
                    <li>Gelato</li>
                </Link>
-               <Link to="/skills" className="skills">
+               <Link to="/gelatoforspecialneeds" className="gelatoforspecialneeds">
                    <li>GELATO FOR SPECIAL NEEDS </li>
                </Link>
-               <Link to="/contact" className="contact">
+               <Link to="/donuts" className="donuts">
                    <li>DONUTS</li>
                </Link>
-               <Link to="/signup" className="signup">
-                   <li>Sign Up</li>
+               <Link to="/donutsforspecialneeds" className="donutsforspecialneeds">
+                   <li>DONUTS FOR SPECIAL NEEDS</li>
+               </Link>
+               <Link to="/account" className="account">
+                   <li>Account</li>
+               </Link>
+               <Link to="/basket" className="basket">
+                   <li>Basket</li>
                </Link>
 
 

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Skills = () => {
+const GelatoForSpecialNeeds = () => {
     return <div>
-        <div><h3>Frontend</h3></div>
+        <div><h3>Backend</h3></div>
         <ul>
             <li>html</li>
             <li>Sass</li>
@@ -11,4 +11,4 @@ const Skills = () => {
     </div>;
 }
 
-export default Skills
+export default GelatoForSpecialNeeds
