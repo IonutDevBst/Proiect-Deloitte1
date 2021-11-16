@@ -1,0 +1,27 @@
+.cards-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.title-container{
+    color: #343A40;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+.image-style{
+    margin-left: 130px;
+    width:100%;
+}
+
+.text-to-image{
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

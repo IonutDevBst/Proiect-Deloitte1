@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "./Navbar.css";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
@@ -14,10 +14,9 @@ const Navbar = () => {
         <Link to="/home" className="home">
           <li>
             <Logo />
-          </li>
-        
+          </li> 
         </Link>
-        <Link to="/gelato" className="gelato">
+        <Link to="/gelato" activeStyle={{textDecoration:"underline" , color:"red"}} className="gelato">
           <li className="novacolor">Gelato</li>
         </Link>
         <Link to="/gelatoforspecialneeds" className="gelatoforspecialneeds">

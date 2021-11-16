@@ -19,8 +19,14 @@
 }
 
 .novacolor:hover,
-.novacolor:visited {
+.novacolor:visited,
+.novacolor:active
+{
   color: blue;
+  border-bottom: 1px solid #0069D9;
+}
+.active-link{
+  color:red;
 }
 
 .Logo {
@@ -43,7 +49,7 @@
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 5px 5px;
   margin: 0 10px;
   cursor: pointer;
 }
