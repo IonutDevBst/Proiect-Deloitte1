@@ -3,7 +3,7 @@ import { Link} from "react-router-dom";
 import "./Navbar.css";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
-import { ReactComponent as Logo } from "./resources/Group 1327.svg";
+import { ReactComponent as Logo } from "../resources/Group 1327.svg";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(true);

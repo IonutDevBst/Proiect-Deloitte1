@@ -1,14 +1,14 @@
 import React from "react";
 import {BrowserRouter as  Router, Route, Routes, Switch } from "react-router-dom"
-import Home from "./components/Home";
-import Gelato from "./components/Gelato"; 
-import GelatoForSpecialNeeds from "./components/GelatoForSpecialNeeds";
-import DonutsForSpecialNeeds from "./components/DonutsForSpecialNeeds"
-import Donuts from "./components/Donuts";
-import Account from "./components/Account.js";
-import Basket from "./components/Basket.js"
+import Home from "./components/Home/Home";
+import Gelato from "./components/Gelato/Gelato"; 
+import GelatoForSpecialNeeds from "./components/GelatoForSpecialNeeds/GelatoForSpecialNeeds";
+import DonutsForSpecialNeeds from "./components/DonutsForSpecialNeeds/DonutsForSpecialNeeds"
+import Donuts from "./components/Donuts/Donuts";
+import Account from "./components/Account/Account.js";
+import Basket from "./components/Basket/Basket.js"
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import { Button } from '@material-ui/core';
 
 

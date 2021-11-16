@@ -1,7 +1,7 @@
 import React from 'react'
-import Cards from './Cards/Cards'
-import image from './Cards/images/Mask Group 1.png'
-import image2 from './Cards/images/Group 1446.png'
+import Cards from '../Cards/Cards'
+import image from '../Cards/images/Mask Group 1.png'
+import image2 from '../Cards/images/Group 1446.png'
 import './Donuts.css'
 
 const Donuts = () => {
