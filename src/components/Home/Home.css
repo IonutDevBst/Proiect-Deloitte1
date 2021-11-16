@@ -35,3 +35,17 @@
     background-color: white;
     color: black;
 }
+.allign-text
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3%;
+}
+
+.cards2-row
+{
+  display: flex;
+  flex-direction: row;
+  
+}

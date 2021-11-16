@@ -6,9 +6,12 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import {Button, CardActions} from '@mui/material'
+import Cards from '../Cards/Cards'
+
 
 const Home = () => {
   return (
+      <div> 
     <div className="cardmedia-style">
     <Card sx={{ width: 590 }} className="root">
                 <CardMedia
@@ -73,6 +76,89 @@ const Home = () => {
                     </Button>
                 </CardActions>
     </Card>
+    </div>
+    <div className="allign-text"> 
+    <h2>TOP SELLING ICE CREAM &amp; GELATO</h2>
+    <h2> EXPLORE ALL</h2>
+    </div>
+    <div className="cards-container">
+                    <Cards 
+                        imageURL={image}
+                        title="Chocolate Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                    <Cards 
+                        imageURL={image}
+                        title="Strawberry Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                    <Cards 
+                        imageURL={image}
+                        title="Simple Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                    <Cards 
+                        imageURL={image}
+                        title="Chocolate Sprinkled Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                </div>
+
+    <div className="allign-text"> 
+    <h2>TOP SELLING DONUTS</h2>
+    <h2> EXPLORE ALL</h2>
+    </div>
+    <div className="cards-container">
+                    <Cards 
+                        imageURL={image}
+                        title="Chocolate Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                    <Cards 
+                        imageURL={image}
+                        title="Strawberry Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                    <Cards 
+                        imageURL={image}
+                        title="Simple Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                    <Cards 
+                        imageURL={image}
+                        title="Chocolate Sprinkled Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                </div>
+
+                <div className="allign-text"> 
+
+    <h2>MERCHANDISE</h2>
+    </div>
+    <div className="cards2-row">
+                    <Cards 
+                        imageURL={image}
+                        title="Chocolate Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                    <Cards 
+                        imageURL={image}
+                        title="Strawberry Donuts"
+                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
+                        price="$ 2.50"
+                        button="Add to basket"/>
+                </div>
+
+
     </div>
   );
 };
