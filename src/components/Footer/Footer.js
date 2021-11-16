@@ -11,32 +11,30 @@ import {
 const Footer = () => {
   return (
     <Box>
-      <h1 style={{ color: "green", 
-                   textAlign: "center", 
-                   marginTop: "-50px" }}>
-        GeeksforGeeks: A Computer Science Portal for Geeks
-      </h1>
+     
       <Container>
         <Row>
           <Column>
-            <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
+            <Heading>USEFUL INFO</Heading>
+            <FooterLink href="#">Privacy Policy</FooterLink>
+            <FooterLink href="#">Term &amp; Conditions</FooterLink>
+            <FooterLink href="#">Cookie Policy</FooterLink>
+            <FooterLink href="#">FAQs</FooterLink>
           </Column>
           <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Writing</FooterLink>
-            <FooterLink href="#">Internships</FooterLink>
-            <FooterLink href="#">Coding</FooterLink>
-            <FooterLink href="#">Teaching</FooterLink>
+            <Heading>YOU CAN FIND US IN</Heading>
+            <FooterLink href="#">London, UK</FooterLink>
+            <FooterLink href="#">Bucharest, RO</FooterLink>
+            <FooterLink href="#">Paris, FR</FooterLink>
+            <FooterLink href="#">Sofia, BG</FooterLink>
           </Column>
           <Column>
-            <Heading>Contact Us</Heading>
-            <FooterLink href="#">Uttar Pradesh</FooterLink>
-            <FooterLink href="#">Ahemdabad</FooterLink>
-            <FooterLink href="#">Indore</FooterLink>
-            <FooterLink href="#">Mumbai</FooterLink>
+            <Heading>ABOUT GELATO &amp; DONUTS</Heading>
+            <FooterLink href="#">About us</FooterLink>
+            <FooterLink href="#">Store locator</FooterLink>
+            <FooterLink href="#">Franchise</FooterLink>
+            <FooterLink href="#">Careers</FooterLink>
+            <FooterLink href="#">Contact us</FooterLink>
           </Column>
           <Column>
             <Heading>Social Media</Heading>
