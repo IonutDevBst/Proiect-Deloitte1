@@ -10,7 +10,7 @@ import Basket from "./components/Basket/Basket.js"
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { Button } from '@material-ui/core';
-
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -25,8 +25,12 @@ const App = () => {
        <Route path="/donutsforspecialneeds" element={<DonutsForSpecialNeeds/>} exact />
        <Route path="/account" element={<Account/>} exact />
        <Route path="/basket" element={<Basket/>} exact />
-     </Routes>     
+     </Routes> 
+    
+     <Footer /> 
+     
     </Router>
+  
   );
 }
 
