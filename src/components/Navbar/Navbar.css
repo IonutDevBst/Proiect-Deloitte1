@@ -19,11 +19,13 @@
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   list-style: none;
+  width:35%;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+ 
 }
 
 .novacolor:hover,
@@ -67,8 +69,11 @@
   align-items: center;
   justify-content: center;
 }
-.displayC {
-  display: inline;
+ .displayC  {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 0px;
+  
 }
 
 .home{

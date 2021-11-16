@@ -29,7 +29,7 @@ const Navbar = () => {
           <li className="novacolor displayC">Donuts for special needs</li>
         </Link>
       </ul>
-      <ul className="nav-links navbar">
+      <ul className="nav-links ">
         <Link to="/account" className="account">
             <div className="novacolor">
           <li className=" account1">
