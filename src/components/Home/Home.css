@@ -41,6 +41,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 3%;
+
 }
 
 .cards2-row
@@ -52,4 +53,19 @@
 
 .title-icecream{
     margin-left: 20px;
+    color:black;
+    
+}
+
+.button-next{
+  text-transform: none ;
+  padding-right:5px;
+  color: black;
+
+}
+
+.btn-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
