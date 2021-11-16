@@ -9,14 +9,14 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(true);
 
   return (
-    <nav className="navbar">
-      <ul className="nav-links navbar">
+    <nav className="links1">
+      <ul className="navbar">
         <Link to="/home" className="home">
           <li>
             <Logo />
           </li> 
         </Link>
-        <Link to="/gelato" activeStyle={{textDecoration:"underline" , color:"red"}} className="gelato">
+        <Link to="/gelato" className="gelato">
           <li className="novacolor">Gelato</li>
         </Link>
         <Link to="/gelatoforspecialneeds" className="gelatoforspecialneeds">

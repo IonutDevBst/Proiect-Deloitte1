@@ -1,26 +1,6 @@
-.imghome{
-    margin-left: 130px;
-    margin-right: -120px;
-    margin-top: 20px;
-    
-
-}
-.text-to-image{
-    position: relative;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 30px;
-    
-    
-}
-
-.card-allign{
-    display:flex;
+.cardmedia-style{
+    display: flex;
     flex-direction: row;
-}
-
-.centered{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    justify-content: space-between;
+    margin-left: 5px;
 }

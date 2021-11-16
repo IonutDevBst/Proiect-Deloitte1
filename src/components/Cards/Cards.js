@@ -10,7 +10,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material'
 function Cards({imageUrl,title,description,price,button}) {
     return (
         <div className="card-container">
-        <Card sx={{ maxWidth: 350 }}>
+        <Card sx={{ maxWidth: 450 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"

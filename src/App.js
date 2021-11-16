@@ -25,10 +25,7 @@ const App = () => {
        <Route path="/donutsforspecialneeds" element={<DonutsForSpecialNeeds/>} exact />
        <Route path="/account" element={<Account/>} exact />
        <Route path="/basket" element={<Basket/>} exact />
-     </Routes>
-
-       
-      
+     </Routes>     
     </Router>
   );
 }
