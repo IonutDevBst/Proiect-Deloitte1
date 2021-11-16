@@ -11,7 +11,6 @@ function Cards({imageUrl,title,description,price,button}) {
     return (
         <div className="card-container">
         <Card sx={{ maxWidth: 450 }}>
-            <CardActionArea>
                 <CardMedia
                     component="img"
                     height="250"
@@ -29,7 +28,6 @@ function Cards({imageUrl,title,description,price,button}) {
                         {price}
                     </Typography>
                 </CardContent>
-            </CardActionArea>
             <CardActions>
                 <Button size="small" className="card-button-style">
                     {button}

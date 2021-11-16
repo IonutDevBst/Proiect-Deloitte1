@@ -5,3 +5,33 @@
     margin-left: 5px;
     margin-top: 5px;
 }
+
+.root{
+    position: relative;
+  }
+  .font{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .font-button{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    left: 40%;
+  }
+
+.font-button > .font-button1{
+    color: white;
+    border: 1px solid white;
+    text-transform: none !important;
+}
+.font-button > .font-button1:hover{
+    background-color: white;
+    color: black;
+}
