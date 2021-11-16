@@ -78,7 +78,7 @@ const Home = () => {
     </Card>
     </div>
     <div className="allign-text"> 
-    <h2>TOP SELLING ICE CREAM &amp; GELATO</h2>
+    <h2 className="title-icecream">TOP SELLING ICE CREAM &amp; GELATO</h2>
     <h2> EXPLORE ALL</h2>
     </div>
     <div className="cards-container">
@@ -109,7 +109,7 @@ const Home = () => {
                 </div>
 
     <div className="allign-text"> 
-    <h2>TOP SELLING DONUTS</h2>
+    <h2 className="title-icecream">TOP SELLING DONUTS</h2>
     <h2> EXPLORE ALL</h2>
     </div>
     <div className="cards-container">
@@ -141,7 +141,7 @@ const Home = () => {
 
                 <div className="allign-text"> 
 
-    <h2>MERCHANDISE</h2>
+    <h2 className="title-icecream">MERCHANDISE</h2>
     </div>
     <div className="cards2-row">
                     <Cards 
