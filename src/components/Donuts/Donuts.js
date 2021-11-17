@@ -1,10 +1,21 @@
 import React from 'react'
 import Cards from '../Cards/Cards'
-import image from '../Cards/images/Mask Group 1.png'
 import image2 from '../Cards/images/Group 1446.png'
 import './Donuts.css'
+import { getListProducts } from '../../api'
+import { useState,useEffect } from 'react'
 
-const Donuts = () => {
+
+const Donuts = (props) => {
+    const [product,setProduct] = useState([]);
+    useEffect(()=>{
+        getData();
+    },[])
+    
+    const getData = async () =>{
+        const result = await getListProducts()
+        setProduct(result)
+    }
     return (<div>
                 <div className="text-to-image">
                     <img src={image2} alt="donut area" className="image-style"/>
@@ -12,30 +23,17 @@ const Donuts = () => {
                 </div>
                 <h2 className="title-container">TOP SELLING DONUTS</h2>
                 <div className="cards-container">
-                    <Cards 
-                        imageURL={image}
-                        title="Chocolate Donuts"
-                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-                        price="$ 2.50"
-                        button="Add to basket"/>
-                    <Cards 
-                        imageURL={image}
-                        title="Strawberry Donuts"
-                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-                        price="$ 2.50"
-                        button="Add to basket"/>
-                    <Cards 
-                        imageURL={image}
-                        title="Simple Donuts"
-                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-                        price="$ 2.50"
-                        button="Add to basket"/>
-                    <Cards 
-                        imageURL={image}
-                        title="Chocolate Sprinkled Donuts"
-                        description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-                        price="$ 2.50"
-                        button="Add to basket"/>
+                    {
+                        product.map((result) =>(
+                            <Cards 
+                            id={result.id}
+                            title={result.title}
+                            description={result.description}
+                            price={result.price}
+                            />
+                        ))
+                    }
+                    
                 </div>
                 
             </div>);

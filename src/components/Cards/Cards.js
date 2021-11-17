@@ -1,5 +1,4 @@
 import React from 'react'
-import image from './images/Mask Group 1.png'
 import './Cards.css'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
@@ -7,14 +6,15 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { Button, CardActionArea, CardActions } from '@mui/material'
 
-function Cards({imageUrl,title,description,price,button}) {
+function Cards(props) {
+    const {id,title,description,price} = props;
     return (
         <div className="card-container">
         <Card sx={{ maxWidth: 450 }}>
                 <CardMedia
                     component="img"
                     height="250"
-                    image={image}
+                    image={`/images/${id}.png`}
                     alt="donuts"      
                 />
                 <CardContent>
@@ -30,7 +30,7 @@ function Cards({imageUrl,title,description,price,button}) {
                 </CardContent>
             <CardActions>
                 <Button size="small" className="card-button-style">
-                    {button}
+                    Add to bucket
                 </Button>
             </CardActions>
     </Card>
