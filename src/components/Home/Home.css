@@ -69,3 +69,7 @@
   align-items: center;
   justify-content: center;
 }
+.cards-container-merch{
+  display: flex;
+  justify-content: flex-start;
+}

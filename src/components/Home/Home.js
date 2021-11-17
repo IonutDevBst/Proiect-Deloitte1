@@ -8,8 +8,19 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActions } from "@mui/material";
 import Cards from "../Cards/Cards";
 import { ReactComponent as NextButton } from "../resoruces2/Group 1340.svg";
+import { useState, useEffect } from "react";
+import { getListProducts } from "../../api";
 
-const Home = () => {
+const Home = (props) => {
+  const [product, setProduct] = useState([]);
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = async () => {
+    const result = await getListProducts();
+    setProduct(result);
+  };
   return (
     <div>
       <div className="cardmedia-style">
@@ -51,34 +62,16 @@ const Home = () => {
         </Button>
       </div>
       <div className="cards-container">
-        <Cards
-          imageURL={image}
-          title="Chocolate Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
-        <Cards
-          imageURL={image}
-          title="Strawberry Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
-        <Cards
-          imageURL={image}
-          title="Simple Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
-        <Cards
-          imageURL={image}
-          title="Chocolate Sprinkled Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
+        {product
+          .filter(({ category }) => category === "Gelato")
+          .map((result) => (
+            <Cards
+              id={result.id}
+              title={result.title}
+              description={result.description}
+              price={result.price}
+            />
+          ))}
       </div>
 
       <div className="allign-text">
@@ -91,55 +84,33 @@ const Home = () => {
         </Button>
       </div>
       <div className="cards-container">
-        <Cards
-          imageURL={image}
-          title="Chocolate Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
-        <Cards
-          imageURL={image}
-          title="Strawberry Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
-        <Cards
-          imageURL={image}
-          title="Simple Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
-        <Cards
-          imageURL={image}
-          title="Chocolate Sprinkled Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
+        {product
+          .filter(({ category }) => category === "Top selling")
+          .map((result) => (
+            <Cards
+              id={result.id}
+              title={result.title}
+              description={result.description}
+              price={result.price}
+            />
+          ))}
       </div>
 
       <div className="allign-text"> 
     <Button disabled>
     <h2 className="title-icecream">MERCHANDISE</h2></Button>
     </div>
-      <div className="cards2-row">
-        <Cards
-          imageURL={image}
-          title="Chocolate Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
-        <Cards
-          imageURL={image}
-          title="Strawberry Donuts"
-          description="Treat yourself to ice cream infused with smooth burbon sprinkled"
-          price="$ 2.50"
-          button="Add to basket"
-        />
+    <div className="cards-container-merch">
+        {product
+          .filter(({ category }) => category === "Merch")
+          .map((result) => (
+            <Cards
+              id={result.id}
+              title={result.title}
+              description={result.description}
+              price={result.price}
+            />
+          ))}
       </div>
     </div>
   );

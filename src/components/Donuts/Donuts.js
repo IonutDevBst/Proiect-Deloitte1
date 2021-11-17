@@ -24,13 +24,35 @@ const Donuts = (props) => {
                 <h2 className="title-container">TOP SELLING DONUTS</h2>
                 <div className="cards-container">
                     {
-                        product.map((result) =>(
+                        product.filter(({category}) => category === 'Top selling').map((result) =>(
+                            
                             <Cards 
                             id={result.id}
+                            
                             title={result.title}
                             description={result.description}
                             price={result.price}
+                            
                             />
+                            
+                        ))
+                    }
+                    
+                </div>
+                <h2 className="title-container">All DONUTS PRODUCTS</h2>
+                <div className="cards-container">
+                    {
+                        product.filter(({category}) => category === 'All selling').map((result) =>(
+                            
+                            <Cards 
+                            id={result.id}
+                            
+                            title={result.title}
+                            description={result.description}
+                            price={result.price}
+                            
+                            />
+                            
                         ))
                     }
                     

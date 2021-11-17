@@ -27,6 +27,7 @@ function Cards(props) {
                     <Typography className="card-price-style">
                         {price}
                     </Typography>
+                
                 </CardContent>
             <CardActions>
                 <Button size="small" className="card-button-style">
