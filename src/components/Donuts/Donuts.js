@@ -1,6 +1,6 @@
 import React from 'react'
 import Cards from '../Cards/Cards'
-import image2 from '../Cards/images/Group 1446.png'
+import image2 from '../resources/Group 1446.png'
 import './Donuts.css'
 import { getListProducts } from '../../api'
 import { useState,useEffect } from 'react'
