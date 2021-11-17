@@ -10,6 +10,8 @@ import Cards from "../Cards/Cards";
 import { ReactComponent as NextButton } from "../resoruces2/Group 1340.svg";
 import { useState, useEffect } from "react";
 import { getListProducts } from "../../api";
+import image2 from "../resoruces2/Group 1444.png";
+import image3 from "../resoruces2/Group 1445.png";
 
 const Home = (props) => {
   const [product, setProduct] = useState([]);
@@ -34,7 +36,7 @@ const Home = (props) => {
           </CardActions>
         </Card>
         <Card sx={{ width: 590 }} className="root">
-          <CardMedia component="img" height="640" image={image} alt="donuts" />
+          <CardMedia component="img" height="640" image={image2} alt="donuts" />
           <Typography gutterBottom variant="h4" component="h4" className="font">
             DELICIOUS DONUTS
           </Typography>
@@ -43,7 +45,7 @@ const Home = (props) => {
           </CardActions>
         </Card>
         <Card sx={{ width: 590 }} className="root">
-          <CardMedia component="img" height="640" image={image} alt="donuts" />
+          <CardMedia component="img" height="640" image={image3} alt="donuts" />
           <Typography gutterBottom variant="h4" component="h4" className="font">
             FAMILY / CORPORATE
           </Typography>
