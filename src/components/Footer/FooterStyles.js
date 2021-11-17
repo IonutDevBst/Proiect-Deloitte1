@@ -28,6 +28,13 @@ export const Column = styled.div`
   text-align: left;
   margin-left: 60px;
 `;
+
+export const Form = styled.form`
+  display: flex;
+  
+`;
+
+
    
 export const Row = styled.div`
   display: grid;
@@ -58,4 +65,5 @@ export const Heading = styled.p`
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;
+  text-decoration: underline;
 `;

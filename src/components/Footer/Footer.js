@@ -37,35 +37,17 @@ const Footer = () => {
             <FooterLink href="#">Contact us</FooterLink>
           </Column>
           <Column>
-            <Heading>Social Media</Heading>
+            <Heading>NEWSLETTER</Heading>
             <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>
-                  Facebook
-                </span>
-              </i>
+            <form>
+      <label>
+        <input type="text" name="newsletter" />
+        </label>
+        
+      <button>Subscribe</button>
+    </form>
             </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>
-                  Instagram
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>
-                  Twitter
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>
-                  Youtube
-                </span>
-              </i>
-            </FooterLink>
+            
           </Column>
         </Row>
       </Container>
