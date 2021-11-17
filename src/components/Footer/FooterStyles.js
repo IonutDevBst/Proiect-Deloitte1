@@ -26,7 +26,8 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 1px;
+  margin-left: 70px;
+  width: 320px;
 `;
 
 export const Form = styled.form`
@@ -55,7 +56,7 @@ export const FooterLink = styled.a`
   text-decoration: none;
    
   &:hover {
-      color: green;
+      color: blue;
       transition: 200ms ease-in;
   }
 `;
