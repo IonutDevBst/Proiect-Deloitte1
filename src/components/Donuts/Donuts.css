@@ -27,3 +27,33 @@
     top: 50%;
     left: 50%;
 }
+.custom-button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.previous-button{
+    background-color: #FFFFFF !important;
+    color: #6C757D !important;
+    text-transform: none !important;
+    border: 0.5px solid #E2E6EA !important;
+}
+
+.next-button{
+    background-color: #FFFFFF !important;
+    text-transform: none !important;
+    border: 0.5px solid #E2E6EA !important;
+    color: #007BFF;
+}
+
+.next-button:hover{
+    background-color: #E2E6EA !important;
+}
+
+.first-donut-page-button{
+    background-color: #007BFF !important;
+    color: #FFFFFF !important;
+}
+

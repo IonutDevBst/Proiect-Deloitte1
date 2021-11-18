@@ -7,7 +7,8 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
-  
+import { Toolbar, Typography } from "@mui/material";
+
 const Footer = () => {
   return (
     <Box>

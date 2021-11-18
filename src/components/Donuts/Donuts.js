@@ -4,6 +4,8 @@ import image2 from '../resources/Group 1446.png'
 import './Donuts.css'
 import { getListProducts } from '../../api'
 import { useState,useEffect } from 'react'
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Button from '@mui/material/Button';
 
 
 const Donuts = (props) => {
@@ -57,7 +59,15 @@ const Donuts = (props) => {
                     }
                     
                 </div>
-                
+                <div className="custom-button-group">
+                    <ButtonGroup variant="outlined" aria-label="outlined primary button group">
+                        <Button className="previous-button">Previous</Button>
+                        <Button className="first-donut-page-button">1</Button>
+                        <Button className="next-button">2</Button>
+                        <Button className="next-button">3</Button>
+                        <Button className="next-button">Next</Button>
+                    </ButtonGroup>
+                </div>
             </div>);
 }
 
