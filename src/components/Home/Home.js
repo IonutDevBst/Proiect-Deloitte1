@@ -1,19 +1,18 @@
 import React from "react";
-import image from "../resoruces2/Group 1443.png";
+import image from "../resources2/Group 1443.png";
 import "./Home.css";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActions} from "@mui/material";
 import { Link } from 'react-router-dom';
 import Cards from "../Cards/Cards";
-import { ReactComponent as NextButton } from "../resoruces2/Group 1340.svg";
+import { ReactComponent as NextButton } from "../resources2/Group 1340.svg";
 import { useState, useEffect } from "react";
 import { getListProducts } from "../../api";
-import image2 from "../resoruces2/Group 1444.png";
-import image3 from "../resoruces2/Group 1445.png";
-import Gelato from "../Gelato/Gelato";
+import image2 from "../resources2/Group 1444.png";
+import image3 from "../resources2/Group 1445.png";
+
 
 const Home = (props) => {
   const [product, setProduct] = useState([]);

@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import { Link} from "react-router-dom";
-import "./Navbar.css";
+import React  from "react";
+import { Link,NavLink} from "react-router-dom";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
-import { ReactComponent as Logo } from "../resources/Group 1327.svg";
+import { ReactComponent as Logo } from "../resources2/Group 1327.svg";
+import "./Navbar.css";
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(true);
-
   return (
     <nav className="links1">
       <ul className="navbar">
@@ -16,45 +14,37 @@ const Navbar = () => {
             <Logo />
           </li> 
         </Link>
-        <Link to="/gelato" className="gelato">
+        <NavLink to="/gelato" className="gelato" activeClassName="active">
           <li className="novacolor">Gelato</li>
-        </Link>
-        <Link to="/gelatoforspecialneeds" className="gelatoforspecialneeds">
-          <li className="novacolor displayC">Gelato for special needs </li>
-        </Link>
-        <Link to="/donuts" className="donuts">
+        </NavLink>
+        <NavLink to="/gelatoforspecialneeds" className="gelatoforspecialneeds" activeClassName="active">
+          <li className="novacolor">Gelato for special needs </li>
+        </NavLink>
+        <NavLink to="/donuts" className="donuts" activeClassName="active">
           <li className="novacolor">Donuts</li>
-        </Link>
-        <Link to="/donutsforspecialneeds" className="donutsforspecialneeds">
-          <li className="novacolor displayC">Donuts for special needs</li>
-        </Link>
+        </NavLink>
+        <NavLink to="/donutsforspecialneeds" className="donutsforspecialneeds" activeClassName="active">
+          <li className="novacolor">Donuts for special needs</li>
+        </NavLink>
       </ul>
       <ul className="nav-links ">
-        <Link to="/account" className="account">
+        <NavLink to="/account" className="account" activeClassName="active">
             <div className="novacolor">
-          <li className=" account1">
+          <li className="center-icons-button">
             <AccountCircleOutlinedIcon />
           </li>
-          <li className=" account1 "> Account</li>
+          <li className="center-icons-button"> Account</li>
           </div>
-        </Link>
-        <Link to="/basket" className="basket ">
+        </NavLink>
+        <NavLink to="/basket" className="basket " activeClassName="active">
             <div className="novacolor">
-          <li className="  account1">
+          <li className="center-icons-button">
             <ShoppingBasketOutlinedIcon />
           </li>
-          <li className=" account1">Basket</li>
+          <li className="center-icons-button">Basket</li>
           </div>
-        </Link>
+        </NavLink>
       </ul>
-
-      <button className="mobile-menu-icon">
-        {isMobile ? (
-          <i className="fas fa-times"></i>
-        ) : (
-          <i className="fas fa-bars"></i>
-        )}
-      </button>
     </nav>
   );
 };

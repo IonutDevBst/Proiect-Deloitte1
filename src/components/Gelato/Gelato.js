@@ -1,11 +1,11 @@
 import React from 'react'
 import Cards from '../Cards/Cards'
-import image2 from '../resources/Group 1446.png'
+import image2 from '../resources2/Group 1446.png'
 import { getListProducts } from '../../api'
 import { useState,useEffect } from 'react'
 
 
-const Gelato = (props) => {
+const Gelato = () => {
     const [product,setProduct] = useState([]);
     useEffect(()=>{
         getData();
