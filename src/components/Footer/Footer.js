@@ -5,9 +5,10 @@ import {
   Row,
   Column,
   FooterLink,
-  Heading,
+  Heading
 } from "./FooterStyles";
 import { Toolbar, Typography } from "@mui/material";
+import { textAlign } from "@mui/system";
 
 const Footer = () => {
   return (
@@ -52,7 +53,13 @@ const Footer = () => {
           </Column>
         </Row>
       </Container>
+
+    <div>
+      <h5 className="copyright" style={{color:'white',textAlign:'center',width:'100%',height:'59px'}}>@2021 Gelato &amp; Donuts</h5>
+    </div>
+  
     </Box>
+   
   );
 };
 export default Footer;
