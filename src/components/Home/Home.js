@@ -2,7 +2,6 @@ import React from "react";
 import image from "../resoruces2/Group 1443.png";
 import "./Home.css";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActions} from "@mui/material";
@@ -13,7 +12,7 @@ import { useState, useEffect } from "react";
 import { getListProducts } from "../../api";
 import image2 from "../resoruces2/Group 1444.png";
 import image3 from "../resoruces2/Group 1445.png";
-import Gelato from "../Gelato/Gelato";
+
 
 const Home = (props) => {
   const [product, setProduct] = useState([]);

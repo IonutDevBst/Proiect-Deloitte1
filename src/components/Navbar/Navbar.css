@@ -4,11 +4,8 @@
   box-sizing: border-box;
 }
 .links1{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-items-align:start;
-  align-self: flex-start;
+  align-items:start;
 }
 
 .navbar {
@@ -25,15 +22,10 @@
 .navbar {
   display: flex;
   justify-content: space-between;
- 
 }
 
-.novacolor:hover,
-.novacolor:visited,
-.novacolor:active
-{
+.novacolor:hover {
   color: blue;
-  border-bottom: 1px solid #0069D9;
 }
 
 .Logo {
@@ -64,16 +56,11 @@
   border: 1px solid yellow;
   border-radius: 5px;
 }
-.account1 {
+
+.center-icons-button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
- .displayC  {
-  display: inline-block;
-  font-size: 18px;
-  padding: 0 0px;
-  
 }
 
 .home{
@@ -81,56 +68,7 @@
   justify-content: flex-start;
 }
 
-
-/*
-.mobile-menu-icon {
-display: none;
+.active{
+  color: blue;
+  border-bottom: 1px solid blue;
 }
-
-@media screen and (max-width: 780px){
-    .Log {
-        display: flex;
-        position: absolute;
-        top: 15px; 
-        left: 35px;
-    }
-    
-    .nav-Links {
-        display: none;
-    }
-    .nav-Links-mobile {
-        position: absolute;
-        display: block;
-        list-style: none;
-        background-color: #005469;
-        left: 0;
-        transition: all 0.5s ease-out;
-        width: 100%;
-    }
-    .home,
-    .skills,
-    .about,
-    .contact,
-    .signup {
-        color: white;
-        text-align: center;
-        padding: 32px;
-        width: 100%;
-        transition: all 0.5s ease; 
-    }
-    .signup{
-        border: none;
-    }
-    .mobile-menu-icon {
-         display: block;
-         position: absolute;
-         font-size: 30px;
-         color: white;
-         background-color: #00828c;
-         border: none;
-         outline: none;
-         top: 15px;
-         right: 25px; 
-    }
-}
-*/

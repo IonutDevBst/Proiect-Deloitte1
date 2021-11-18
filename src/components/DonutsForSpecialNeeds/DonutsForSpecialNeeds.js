@@ -2,12 +2,7 @@ import React from 'react'
 
 const GelatoForSpecialNeeds = () => {
     return <div>
-        <div><h3>Backend</h3></div>
-        <ul>
-            <li>html</li>
-            <li>Sass</li>
-            <li>React</li>
-        </ul>
+        <h1>This is donuts for special needs page</h1>
     </div>;
 }
 
