@@ -2,7 +2,7 @@ import React  from "react";
 import { Link,NavLink} from "react-router-dom";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
-import { ReactComponent as Logo } from "../resources/Group 1327.svg";
+import { ReactComponent as Logo } from "../resources2/Group 1327.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
