@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as  Router, Route, Routes,Navigate} from "react-router-dom"
+import {BrowserRouter as  Router, Route, Routes} from "react-router-dom"
 import Home from "./components/Home/Home";
 import Gelato from "./components/Gelato/Gelato"; 
 import GelatoForSpecialNeeds from "./components/GelatoForSpecialNeeds/GelatoForSpecialNeeds";
@@ -17,7 +17,7 @@ const App = () => {
     <Router>
     <Navbar />
       <Routes>
-       <Route path="/" element={<Home/>} exact />
+       <Route exact path="/" element={<Home/>} />
        <Route path="/home" element={<Home/>} exact />
        <Route path="/gelato" element={<Gelato/>} exact />
        <Route path="/gelatoforspecialneeds" element={<GelatoForSpecialNeeds/>} exact />
